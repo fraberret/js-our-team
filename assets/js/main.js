@@ -32,3 +32,21 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
+
+//1. stampare su console le informazioni di nome, ruolo e la stringa della foto
+    // ciclo dentro l'array 'team' per selezionare il singolo lavoratore
+    for (let i = 0; i < team.length; i++) {
+        const member = team[i];
+        console.log(member);
+        
+        // ciclo dentro l'oggetto per selezionare i valori
+
+        
+    }
+    // salvo in una variabile i valori
+    // li loggo in console
+
+//2. stampare le stesse informazioni su DOM sottoforma di stringhe
+    // creo una const dove salvo il markup con i valori
+    // seleziono l'elemento dalla DOM
+    // stampo all'interno la const contenente il markup con insertAdjacentHTML
