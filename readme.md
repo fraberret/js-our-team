@@ -31,5 +31,5 @@ organizzare i singoli membri in card/schede
 2. stampare le stesse informazioni su DOM sottoforma di stringhe
     - creo una const dove salvo il markup con i valori
     - seleziono l'elemento dalla DOM
-    - stampo all'interno la const contenente il markup con insertAdjacentHTML
+    - stampo all'interno la const contenente il markup con InnerHTML
 
