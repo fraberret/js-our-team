@@ -34,7 +34,7 @@ const team = [
 ];
 
 // seleziono l'elemento dalla DOM
-let rowElement=document.querySelector('.row')
+let rowElement = document.querySelector('.row')
 
 //1. stampare su console le informazioni di nome, ruolo e la stringa della foto
 // ciclo dentro l'array 'team' per selezionare il singolo lavoratore
@@ -43,22 +43,31 @@ for (let i = 0; i < team.length; i++) {
     console.log(member);
 
     // ciclo dentro l'oggetto per selezionare i valori
-    for (let key in member) {
 
-        // salvo in una variabile i valori
-        let memberValue = member[key]
-        
-        // li loggo in console
-        console.log(memberValue);
-        
-        //creo una const dove salvo il markup con i valori
-        const markup= `<p>${memberValue}</p>`
 
-        // stampo all'interno la const contenente il markup con innerHTML
-        rowElement.innerHTML+= markup
-    }
+    // salvo in una variabile i valori
+
+
+    let memberNome = member.name
+    let memberRole = member.role
+    let memberImg = member.image
+
+
+
+
+
+    // li loggo in console
+    console.log(memberNome);
+
+
+
+    //creo una const dove salvo il markup con i valori
+    const markup= ` <div class="col-4 g-5"><div class="card p-4"><h3>${memberNome}</h3> <p>${memberRole}</p> <img src="../assets/img/${memberImg}" alt=""></div></div>`
+
+    // stampo all'interno la const contenente il markup con innerHTML
+    rowElement.innerHTML+= markup
+
 
 
 }
 
-//2. stampare le stesse informazioni su DOM sottoforma di stringhe
